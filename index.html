@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Музыкальная школа «Кантри», Краснодар: вокал, фортепиано, барабаны</title>
+<meta name="description" content="Музыкальная школа «Кантри» в Краснодаре: уроки вокала, фортепиано и барабанов для взрослых и детей. Пробный урок бесплатно. Абонементы на 4, 8 и 12 занятий от 5 000 ₽.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Музыкальная школа «Кантри», Краснодар">
+<meta property="og:description" content="Вокал, фортепиано, барабаны для взрослых и детей. Пробный урок бесплатно.">
+<meta name="theme-color" content="#F6F4EF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23F6F4EF'/%3E%3Ccircle cx='32' cy='38' r='17' fill='none' stroke='%232F5D9E' stroke-width='5'/%3E%3Cpath d='M10 8l24 26M54 8L30 34' stroke='%23D4472B' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300..800&family=Golos+Text:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="styles.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+<script src="motion.js" defer></script>
+<script src="script.js" defer></script>
+<script type="module" src="scene.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="bar" id="bar">
+  <a class="logo" href="#top" aria-label="Музыкальная школа «Кантри», наверх">
+    <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="27" r="12" fill="none" stroke="#2F5D9E" stroke-width="3.5"/><path d="M6 5l17 19M38 5L21 24" stroke="#D4472B" stroke-width="3.5" stroke-linecap="round"/></svg>
+    <span>Кантри<small>музыкальная школа</small></span>
+  </a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#classes" data-roll>Классы</a>
+    <a href="#price" data-roll>Абонементы</a>
+    <a href="#way" data-roll>Как начать</a>
+    <a href="#faq" data-roll>Вопросы</a>
+  </nav>
+  <a class="btn btn--sm" href="#form" data-magnetic>Пробный урок</a>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="staff" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap hero__top">
+    <span class="eyebrow">Краснодар · для взрослых и детей</span>
+    <h1>Музыкальная школа «Кантри»</h1>
+    <p class="hero__sub">Уроки вокала, фортепиано и барабанов. Первый урок пробный, он бесплатный.</p>
+    <div class="hero__cta">
+      <a class="btn" href="#form" data-magnetic>Записаться на пробный урок</a>
+      <a class="btn btn--ghost" href="#price" data-magnetic>Посмотреть абонементы</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="seq" id="seq">
+      <div class="seq__head">
+        <p class="seq__cap"><b>Соберите свою партию.</b> Нажимайте на клетки: каждая клетка это один звук.</p>
+        <button class="seq__snd" id="sndBtn" type="button" aria-pressed="false"><i aria-hidden="true"></i><span>Звук выключен</span></button>
+      </div>
+      <div class="seq__grid" id="seqGrid" role="group" aria-label="Секвенсор из трёх дорожек: вокал, фортепиано, барабаны">
+        <div class="seq__play" id="seqPlay" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec classes" id="classes" aria-labelledby="clH">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <h2 id="clH">Три класса, одна школа</h2>
+      <p class="sec__sub">Заниматься могут и взрослые, и дети. Цена абонемента одна на все классы.</p>
+    </div>
+    <ul class="tracks">
+      <li class="track track--voc" data-reveal>
+        <div class="track__name">Вокал</div>
+        <div class="track__txt"><p>Уроки вокала для взрослых и детей. Начните с пробного урока, он бесплатный.</p><a class="track__go" href="#form" data-pick="Вокал" data-roll>Записаться на вокал</a></div>
+        <svg class="track__art" viewBox="0 0 220 60" aria-hidden="true"><path class="w1" d="M0 30 Q 13 4 27 30 T 55 30 T 82 30 T 110 30 T 137 30 T 165 30 T 192 30 T 220 30" fill="none" stroke-width="3" stroke-linecap="round"/><path class="w2" d="M0 30 Q 13 14 27 30 T 55 30 T 82 30 T 110 30 T 137 30 T 165 30 T 192 30 T 220 30" fill="none" stroke-width="2" stroke-linecap="round" opacity=".5"/></svg>
+      </li>
+      <li class="track track--pia" data-reveal>
+        <div class="track__name">Фортепиано</div>
+        <div class="track__txt"><p>Уроки фортепиано для взрослых и детей. Начните с пробного урока, он бесплатный.</p><a class="track__go" href="#form" data-pick="Фортепиано" data-roll>Записаться на фортепиано</a></div>
+        <svg class="track__art keys" viewBox="0 0 220 60" aria-hidden="true"></svg>
+      </li>
+      <li class="track track--dru" data-reveal>
+        <div class="track__name">Барабаны</div>
+        <div class="track__txt"><p>Уроки на барабанах для взрослых и детей. Начните с пробного урока, он бесплатный.</p><a class="track__go" href="#form" data-pick="Барабаны" data-roll>Записаться на барабаны</a></div>
+        <svg class="track__art" viewBox="0 0 220 60" aria-hidden="true"><circle class="r r1" cx="110" cy="30" r="10" fill="none" stroke-width="3"/><circle class="r r2" cx="110" cy="30" r="10" fill="none" stroke-width="2"/><circle class="r r3" cx="110" cy="30" r="10" fill="none" stroke-width="1.5"/></svg>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="kit" id="kit" aria-label="Как это начинается: установка собирается по мере прокрутки">
+  <div class="kit__pin">
+    <div class="wrap kit__grid">
+      <div class="kit__txt">
+        <h2 class="kit__h">Как это начинается</h2>
+        <ol class="chap" id="chap">
+          <li class="on"><b>Пробный урок</b><span>Приходите познакомиться с инструментом. Это бесплатно.</span></li>
+          <li><b>Выбираете класс</b><span>Вокал, фортепиано или барабаны. Для взрослых и детей.</span></li>
+          <li><b>Берёте абонемент</b><span>На 4, 8 или 12 занятий. Цена одна на все классы.</span></li>
+          <li><b>Начинаете играть и петь</b><span>Оставьте заявку, и мы договоримся о времени пробного урока.</span></li>
+        </ol>
+        <p class="kit__hint" id="kitHint">Листайте: установка собирается</p>
+      </div>
+      <div class="kit__stage">
+        <canvas id="kitCv" aria-label="Барабанная установка, которая собирается по мере прокрутки" role="img"></canvas>
+        <div class="kit__fb" id="kitFb" aria-hidden="true">
+          <svg viewBox="0 0 300 220"><ellipse cx="150" cy="190" rx="110" ry="14" fill="rgba(24,32,46,.1)"/><rect x="95" y="90" width="110" height="80" rx="10" fill="#2F5D9E"/><ellipse cx="150" cy="90" rx="55" ry="16" fill="#fff" stroke="#18202E" stroke-width="3"/><path d="M60 30l60 56M240 30l-60 56" stroke="#D4472B" stroke-width="7" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec price" id="price" aria-labelledby="prH">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <h2 id="prH">Абонементы: занятия считаем тактами</h2>
+      <p class="sec__sub">Один такт это четыре занятия. Цена одинакова для вокала, фортепиано и барабанов.</p>
+    </div>
+    <div class="pr" data-reveal>
+      <div class="pr__tabs" data-pill role="tablist" aria-label="Абонемент">
+        <button data-pill-item role="tab" data-n="4" aria-selected="false">4 занятия</button>
+        <button data-pill-item role="tab" data-n="8" aria-selected="true">8 занятий</button>
+        <button data-pill-item role="tab" data-n="12" aria-selected="false">12 занятий</button>
+      </div>
+      <div class="pr__body">
+        <div class="pr__sum">
+          <div class="pr__num"><b id="pNum" aria-live="polite">9 000</b><span>₽</span></div>
+          <p class="pr__per" id="pPer">1 125 ₽ за одно занятие</p>
+          <a class="btn" href="#form" id="pBtn" data-magnetic>Записаться</a>
+        </div>
+        <div class="pr__beats" id="pBeats" aria-hidden="true"></div>
+      </div>
+      <p class="pr__note"><b>Затакт.</b> Пробный урок до начала абонемента, он бесплатный.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec way" id="way" aria-labelledby="wayH">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <h2 id="wayH">Три шага до первого урока</h2>
+    </div>
+    <ol class="way__list" data-stagger>
+      <li><b>Оставляете заявку</b><span>Имя и телефон или Telegram. Выбираете, что интереснее: вокал, фортепиано или барабаны.</span></li>
+      <li><b>Приходите на пробный урок</b><span>Он бесплатный. Время согласуем после заявки.</span></li>
+      <li><b>Выбираете абонемент</b><span>На 4, 8 или 12 занятий, если пробный урок понравился.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap faq">
+    <div class="sec__head" data-reveal>
+      <h2>Коротко о главном</h2>
+    </div>
+    <div class="faq__list" data-reveal>
+      <details><summary>Пробный урок правда бесплатный?</summary><p>Да. Пробный урок бесплатный, а абонемент выбираете уже после него.</p></details>
+      <details><summary>Кто может заниматься?</summary><p>И взрослые, и дети. Занимаются вокалом, фортепиано и барабанами.</p></details>
+      <details><summary>Занятия очные или онлайн?</summary><p>Занятия проходят очно, в Краснодаре.</p></details>
+      <details><summary>Какой абонемент выгоднее?</summary><p>Чем больше занятий в абонементе, тем дешевле каждое: 1 250 ₽ при 4 занятиях, 1 125 ₽ при 8 и 1 000 ₽ при 12.</p></details>
+      <details><summary>Цена зависит от класса?</summary><p>Нет. Абонементы стоят одинаково на вокал, фортепиано и барабаны.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec form" id="form">
+  <div class="wrap form__box">
+    <div data-reveal>
+      <h2>Запишитесь на бесплатный пробный урок</h2>
+      <p class="form__lead">Оставьте имя и контакт. Мы свяжемся и договоримся о времени.</p>
+      <ul class="links">
+        <li><a href="tel:+79186950400">Телефон <span>+7 918 69 50 400</span></a></li>
+        <li><a href="https://t.me/countrystudio_krd" target="_blank" rel="noopener">Telegram-канал <span>t.me/countrystudio_krd</span></a></li>
+        <li><a href="https://vk.ru/countrycokrd" target="_blank" rel="noopener">ВКонтакте <span>vk.ru/countrycokrd</span></a></li>
+        <li><a href="https://max.ru/u/f9LHodD0cOLjfoTI5jsUG3FJ4AnuPW8jLxWFPFLuCsYjK5JlDtKXIrVAUVw" target="_blank" rel="noopener">MAX <span>написать в мессенджере</span></a></li>
+      </ul>
+    </div>
+    <form class="fm" id="leadForm" novalidate data-reveal>
+      <label>Как к вам обращаться<input type="text" name="name" autocomplete="name" required></label>
+      <label>Телефон или Telegram<input type="text" name="contact" autocomplete="tel" required placeholder="+7… или @ник"></label>
+      <label>Что интересует
+        <select name="service" id="svc">
+          <option>Пока не знаю, нужен совет</option>
+          <option>Вокал</option>
+          <option>Фортепиано</option>
+          <option>Барабаны</option>
+        </select>
+      </label>
+      <label>Для кого занятия
+        <select name="who">
+          <option>Для себя</option>
+          <option>Для ребёнка</option>
+        </select>
+      </label>
+      <label>Комментарий<textarea name="comment" placeholder="Удобные дни и время, вопросы (по желанию)"></textarea></label>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="agree"><input type="checkbox" name="consent" id="consent"><span>Даю согласие на обработку персональных данных по <a href="privacy.html" target="_blank" rel="noopener">политике конфиденциальности</a></span></label>
+      <button class="btn" type="submit" data-magnetic>Отправить заявку</button>
+      <p class="fm__msg" id="msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Музыкальная школа «Кантри» · Краснодар</span>
+    <span><a href="privacy.html">Политика конфиденциальности</a></span>
+  </div>
+</footer>
+</body>
+</html>
